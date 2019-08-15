@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../FPGA/PreImplement/RamSinglePort.vhd" \
+"../../../../../../FPGA/PreImplement/ImageRead.vhd" \
+"../../../../../../FPGA/PreImplement/tb_ImageRead.vhd" \
+"../../../../../../FPGA/PreImplement/tb_RamSinglePort.vhd" \
+
+# Do not sort compile order
+nosort
