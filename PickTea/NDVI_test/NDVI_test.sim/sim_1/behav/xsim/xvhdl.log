@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/UOM/Semester7/FYP/NDVI_Camera/FPGA/PreImplement/RamSinglePort.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'RamSinglePort'
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/UOM/Semester7/FYP/NDVI_Camera/FPGA/PreImplement/ImageRead.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ImageRead'
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/UOM/Semester7/FYP/NDVI_Camera/FPGA/PreImplement/tb_ImageRead.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_ImageRead'
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/UOM/Semester7/FYP/NDVI_Camera/FPGA/PreImplement/tb_RamSinglePort.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_RamSinglePort'

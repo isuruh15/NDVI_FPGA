@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1565934817">
+  <File Type="BITSTR-BMM" Name="Sys_Main_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Sys_Main_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Sys_Main_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Sys_Main_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Sys_Main.tcl"/>
+  <File Type="OPT-TIMING" Name="Sys_Main_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Sys_Main_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Sys_Main_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Sys_Main_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Sys_Main_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Sys_Main.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Sys_Main_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Sys_Main_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Sys_Main_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Sys_Main_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Sys_Main_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Sys_Main_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Sys_Main_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Sys_Main_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Sys_Main_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Sys_Main_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Sys_Main_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Sys_Main.bgn"/>
+  <File Type="PLACE-TIMING" Name="Sys_Main_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Sys_Main_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Sys_Main.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Sys_Main_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Sys_Main_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Sys_Main_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Sys_Main.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Sys_Main_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Sys_Main_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Sys_Main_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Sys_Main_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Sys_Main_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Sys_Main_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Sys_Main.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Sys_Main_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Sys_Main.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Sys_Main_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Sys_Main_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Sys_Main.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Sys_Main_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Sys_Main_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Sys_Main_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Sys_Main_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Sys_Main_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Sys_Main_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Sys_Main_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Sys_Main_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Sys_Main_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Sys_Main_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Sys_Main_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Sys_Main_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Sys_Main_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Sys_Main_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Sys_Main_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Sys_Main_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Sys_Main_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Sys_Main_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Sys_Main_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Sys_Main.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Sys_Main_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Sys_Main.rbt"/>
+  <File Type="BITSTR-NKY" Name="Sys_Main.nky"/>
+  <File Type="BG-DRC" Name="Sys_Main.drc"/>
+  <File Type="RDI-RDI" Name="Sys_Main.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../FPGA/PreImplement/RamSinglePort.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../FPGA/PreImplement/ImageRead.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/import_ise_summary.txt"/>
+    <File Path="$PSRCDIR/sources_1/new/Sys_Main.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Sys_Main"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
