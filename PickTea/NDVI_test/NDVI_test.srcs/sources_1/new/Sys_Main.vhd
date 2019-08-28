@@ -46,7 +46,12 @@ entity Sys_Main is
         --RAMaddr: in std_logic_vector(6 downto 0);
         clock: in std_logic; -- clock input for RAM
         --enable: in std_logic; -- clock input for RAM 
-        RAMout: out std_logic_vector(7 downto 0)
+--        RAMout: out std_logic_vector(7 downto 0);
+--        RAMoutNIR: out std_logic_vector(7 downto 0);
+        R,G,B: out std_logic_vector(7 downto 0)
+        
+--        vga_hsync : out  STD_LOGIC;
+--        vga_vsync : out  STD_LOGIC
     );
 --  Port ( );
 end Sys_Main;
@@ -66,6 +71,41 @@ COMPONENT blk_mem_gen_read
     doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
     );
 END COMPONENT;
+
+COMPONENT RGB
+	PORT(
+		Din_l : IN std_logic_vector(7 downto 0);
+		Din_r : IN std_logic_vector(7 downto 0);
+		Nblank : IN std_logic;          
+		R : OUT std_logic_vector(7 downto 0);
+		G : OUT std_logic_vector(7 downto 0);
+		B : OUT std_logic_vector(7 downto 0)
+		);
+END COMPONENT;
+
+--COMPONENT VGA
+--	PORT(
+--		CLK25 : IN std_logic;    
+--        rez_160x120 : IN std_logic;
+--        rez_320x240 : IN std_logic;
+--		Hsync : OUT std_logic;
+--		Vsync : OUT std_logic;
+--		Nblank : OUT std_logic;      
+--		clkout : OUT std_logic;
+--		activeArea : OUT std_logic;
+--		Nsync : OUT std_logic
+--		);
+--END COMPONENT;
+
+component clk_wiz_0
+	port (
+	clk_in1    :in std_logic;
+	reset:in std_logic;
+	locked :out std_logic;
+    clk_out1         : out     std_logic;
+    -- Clock out ports
+    clk_out2          : out    std_logic);
+end component;
 
 TYPE mem_type IS ARRAY(0 TO 15) OF std_logic_vector(7 DOWNTO 0); --number of rows, data width
 
@@ -89,8 +129,21 @@ end function;
 signal ram_block: mem_type := init_mem("IMAGE_FILE.MIF");
 signal read_address_reg: std_logic_vector(3 downto 0) := (others=>'0');
 
+signal red,green,blue : std_logic_vector(7 downto 0);
+signal activeArea : std_logic;
+signal nBlank     : std_logic;
+signal vSync      : std_logic;
+signal nSync      : std_logic;
+signal rez_160x120 : std_logic;
+signal rez_320x240 : std_logic;
+signal clk_vga    : std_logic;
+signal clock100 :std_logic;
+
 
 signal dOut : std_logic_vector(7 downto 0);
+
+signal RAMout : std_logic_vector(7 downto 0);
+signal RAMoutNIR : std_logic_vector(7 downto 0);
 --signal RAMaddr : std_logic_vector(6 downto 0);
 --signal weRAM : std_logic;
 --signal reRAM : std_logic;
@@ -126,12 +179,54 @@ Inst_frame_buffer_r: blk_mem_gen_read PORT MAP(
 		wea   => "1",
 		addra => addrInRAM,
 		dina  => dOut,
-		clkb  => clock,
+		clkb  => clk_vga,
 		enb   => re,
 		addrb => addrOutRAM,
 		doutb => RAMout
 	);
+	
+Inst_frame_buffer_nir: blk_mem_gen_read PORT MAP(
+		clka  => clock,
+		ena   => '1',
+		wea   => "1",
+		addra => addrInRAM,
+		dina  => dOut,
+		clkb  => clk_vga,
+		enb   => re,
+		addrb => addrOutRAM,
+		doutb => RAMoutNIR
+	);
+	
+Inst_rgb: RGB PORT MAP(
+		Din_l => RAMout,          --from memory - clock sync need to implement
+		Din_r => RAMoutNIR,
+		Nblank => activeArea,
+		R => red,
+		G => green,
+		B => blue
+	);
+	
+	
+--Inst_VGA: VGA PORT MAP(
+--		CLK25      => clk_vga,        --from clocking module
+--        rez_160x120 => rez_160x120,
+--        rez_320x240 => rez_320x240,
+--		clkout     => open,
+--		Hsync      => vga_hsync,      --output pin
+--		Vsync      => vsync,
+--		Nblank     => nBlank,
+--		Nsync      => nsync,
+--      activeArea => activeArea
+--	);
 
+clock_controller : clk_wiz_0
+     port map
+      (-- Clock in ports
+      reset => '0',
+      clk_in1 => clock,
+       clk_out1 => clock100,
+       -- Clock out ports
+       clk_out2 => clk_vga);
 
 
 process (clock)

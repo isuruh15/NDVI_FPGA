@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug 23 15:43:53 2019
+# Process ID: 10396
+# Current directory: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/NDVI_Image_1.2/NDVI_Image_1.2.runs/clk_wiz_base_synth_1
+# Command line: vivado.exe -log clk_wiz_base.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_base.tcl
+# Log file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/NDVI_Image_1.2/NDVI_Image_1.2.runs/clk_wiz_base_synth_1/clk_wiz_base.vds
+# Journal file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/NDVI_Image_1.2/NDVI_Image_1.2.runs/clk_wiz_base_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_base.tcl -notrace

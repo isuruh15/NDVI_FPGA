@@ -49,7 +49,9 @@ architecture Behavioral of tb_SysMain is
         --RAMaddr: in std_logic_vector(6 downto 0);
         clock: in std_logic; -- clock input for RAM
         --enable: in std_logic; -- clock input for RAM 
-        RAMout: out std_logic_vector(7 downto 0)
+--        RAMout: out std_logic_vector(7 downto 0);
+--        RAMoutNIR: out std_logic_vector(7 downto 0)
+        R,G,B: out std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
@@ -64,7 +66,9 @@ architecture Behavioral of tb_SysMain is
    signal re : std_logic := '0';
    
    --Outputs
-   signal RAMout : std_logic_vector(7 downto 0);
+--   signal RAMout : std_logic_vector(7 downto 0);
+--   signal RAMoutNIR : std_logic_vector(7 downto 0);
+    signal R,G,B : std_logic_vector(7 downto 0);
    
    -- Clock period definitions
    constant clock_period : time := 10 ns;
@@ -83,8 +87,11 @@ BEGIN
           addrOutRAM => addrOutRAM,
           addrInRAM => addrInRAM,
           we => we,
-          re => re,
-          RAMout => RAMout
+          re => re
+           
+--          RAMout => RAMout,
+--          RAMoutNIR => RAMoutNIR
+          
         );
 
    -- Clock process definitions
@@ -114,7 +121,7 @@ BEGIN
 	  for i in 0 to 15 loop
 	  addrOut <= std_logic_vector(to_unsigned(i, 4));
 	  wait for 20 ns;
-	  addrInRAM <= std_logic_vector(to_unsigned(i, 7));
+	  addrInRAM <= std_logic_vector(to_unsigned(i+1, 7));
 	  wait for 20 ns;
 	  addrOutRAM <= std_logic_vector(to_unsigned(i, 7));
 	  wait for 20 ns;

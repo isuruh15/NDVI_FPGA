@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_SysMain_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_SysMain" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="409996075fs"></ZoomStartTime>
+      <ZoomEndTime time="410000926fs"></ZoomEndTime>
+      <Cursor1Time time="410000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/tb_SysMain/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/dataIn" type="array">
+      <obj_property name="ElementShortName">dataIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/addrOut" type="array">
+      <obj_property name="ElementShortName">addrOut[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addrOut[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/addrIn" type="array">
+      <obj_property name="ElementShortName">addrIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addrIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/addrOutRAM" type="array">
+      <obj_property name="ElementShortName">addrOutRAM[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addrOutRAM[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/addrInRAM" type="array">
+      <obj_property name="ElementShortName">addrInRAM[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addrInRAM[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/we" type="array">
+      <obj_property name="ElementShortName">we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/re" type="logic">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/RAMout" type="array">
+      <obj_property name="ElementShortName">RAMout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RAMout[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/RAMoutNIR" type="array">
+      <obj_property name="ElementShortName">RAMoutNIR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RAMoutNIR[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_SysMain/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_NDVI_behav/xsimk.exe -simmode gui -wdb tb_NDVI_behav.wdb -simrunnum 0 -socket 65404
+Design successfully loaded
+Design Loading Memory Usage: 6720 KB (Peak: 6720 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 8168 KB (Peak: 8168 KB)
+Simulation CPU Usage: 359 ms
