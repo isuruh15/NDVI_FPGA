@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 12 15:10:40 2019
+# Process ID: 14380
+# Current directory: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/AXI4Stream_RS232_0_synth_1
+# Command line: vivado.exe -log AXI4Stream_RS232_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI4Stream_RS232_0.tcl
+# Log file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/AXI4Stream_RS232_0_synth_1/AXI4Stream_RS232_0.vds
+# Journal file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/AXI4Stream_RS232_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source AXI4Stream_RS232_0.tcl -notrace

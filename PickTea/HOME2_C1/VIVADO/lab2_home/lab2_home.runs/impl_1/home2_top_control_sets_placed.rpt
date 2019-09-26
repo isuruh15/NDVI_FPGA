@@ -1,0 +1,107 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Sep 26 11:53:53 2019
+| Host         : DESKTOP-N9SHNS0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file home2_top_control_sets_placed.rpt
+| Design       : home2_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    29 |
+|    Minimum number of control sets                        |    29 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    29 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     7 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             168 |           38 |
+| No           | No                    | Yes                    |               5 |            2 |
+| No           | Yes                   | No                     |             116 |           43 |
+| Yes          | No                    | No                     |              61 |           15 |
+| Yes          | No                    | Yes                    |              19 |            4 |
+| Yes          | Yes                   | No                     |             163 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                                       Enable Signal                                      |                                                           Set/Reset Signal                                                           | Slice Load Count | Bel Load Count |
++------------------------------+------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Inst_ClockDev/inst/CLK25MHz |                                                                                          | Inst_VGA/Hsync0                                                                                                                      |                1 |              1 |
+|  Inst_ClockDev/inst/CLK25MHz | Inst_VGA/eqOp                                                                            | Inst_VGA/Vcnt                                                                                                                        |                1 |              1 |
+|  Inst_ClockDev/inst/CLK25MHz |                                                                                          |                                                                                                                                      |                1 |              3 |
+|  clk_IBUF_BUFG               | buffer_index                                                                             | rst_IBUF                                                                                                                             |                1 |              3 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                2 |              4 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG               | com_instance/U0/RS232_Manager_inst/Inst_uart/rx_baud_tick_reg_n_0                        |                                                                                                                                      |                1 |              4 |
+|  clk_IBUF_BUFG               |                                                                                          | rgb2bw_instance/p_0_in                                                                                                               |                2 |              8 |
+|  clk_IBUF_BUFG               | com_instance/U0/RS232_Manager_inst/Inst_uart/E[0]                                        | rst_IBUF                                                                                                                             |                1 |              8 |
+|  clk_IBUF_BUFG               | com_instance/U0/RS232_Manager_inst/data_stream_in[7]_i_1_n_0                             | rst_IBUF                                                                                                                             |                2 |              8 |
+|  clk_IBUF_BUFG               | redbuffer[7]_i_1_n_0                                                                     |                                                                                                                                      |                2 |              8 |
+|  clk_IBUF_BUFG               | bluebuffer[7]_i_1_n_0                                                                    |                                                                                                                                      |                1 |              8 |
+|  clk_IBUF_BUFG               | greenbuffer[7]_i_1_n_0                                                                   |                                                                                                                                      |                1 |              8 |
+|  Inst_ClockDev/inst/CLK25MHz | Inst_VGA/eqOp                                                                            |                                                                                                                                      |                4 |              9 |
+|  Inst_ClockDev/inst/CLK25MHz |                                                                                          | Inst_VGA/eqOp                                                                                                                        |                5 |             10 |
+|  clk_IBUF_BUFG               | com_instance/U0/RS232_Manager_inst/Inst_uart/uart_tx_count[2]_i_1_n_0                    | rst_IBUF                                                                                                                             |                3 |             10 |
+|  clk_IBUF_BUFG               | com_instance/U0/RS232_Manager_inst/Inst_uart/uart_rx_data_vec                            | rst_IBUF                                                                                                                             |                3 |             11 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                4 |             12 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                5 |             12 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             15 |
+|  clk_IBUF_BUFG               |                                                                                          | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                5 |             15 |
+|  Inst_ClockDev/inst/CLK25MHz | Inst_VGA/val                                                                             | Inst_VGA/clear                                                                                                                       |                4 |             16 |
+|  clk_IBUF_BUFG               | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  clk_IBUF_BUFG               | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/rdp_inst/E[0]          | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg_0                  |                6 |             23 |
+|  clk_IBUF_BUFG               | rgb2bw_instance/E[0]                                                                     |                                                                                                                                      |                6 |             24 |
+|  clk_IBUF_BUFG               | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | com_instance/U0/FIFO_DATA_RX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |                9 |             34 |
+|  clk_IBUF_BUFG               |                                                                                          | rst_IBUF                                                                                                                             |               14 |             40 |
+|  clk_IBUF_BUFG               | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0] | com_instance/U0/FIFO_DATA_TX/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/wrst_busy                                        |               12 |             45 |
+|  clk_IBUF_BUFG               |                                                                                          |                                                                                                                                      |               37 |            165 |
++------------------------------+------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

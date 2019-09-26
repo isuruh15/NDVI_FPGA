@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Sep 26 11:52:33 2019
+# Process ID: 12964
+# Current directory: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/impl_1
+# Command line: vivado.exe -log home2_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source home2_top.tcl -notrace
+# Log file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/impl_1/home2_top.vdi
+# Journal file: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/VIVADO/lab2_home/lab2_home.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source home2_top.tcl -notrace

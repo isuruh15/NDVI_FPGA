@@ -1,0 +1,38 @@
+  ****** Beginning of mfile2sci() session ******
+  File to convert: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/MATLAB/LAB2_MATLAB/Seriale.m
+  Result file path: F:/UOM/Semester7/FYP/NDVI_Camera/PickTea/HOME2_C1/MATLAB/SciLab/
+  Recursive mode: OFF
+  Only double values used in M-file: NO
+  Verbose mode: 3
+  Generate formatted code: NO
+  M-file reading...
+  M-file reading: Done
+  Syntax modification...
+  Syntax modification: Done
+  Macro to tree conversion...
+  Conversion of M-tree...
+  !! L.9: Matlab function uigetfile not yet converted, original calling sequence used.
+  L.9: (Warning name conflict: function name changed from uigetfile to %uigetfile).
+  !! L.17: Matlab function imread not yet converted, original calling sequence used.
+  ! L.38: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.38: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.38: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.38: Unknown function mtlb not converted, original calling sequence used.
+  ! L.38: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.38: Unknown function mtlb not converted, original calling sequence used.
+  ! L.39: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.39: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.39: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.39: Unknown function mtlb not converted, original calling sequence used.
+  ! L.39: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.39: Unknown function mtlb not converted, original calling sequence used.
+  ! L.40: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.40: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  ! L.40: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.40: Unknown function mtlb not converted, original calling sequence used.
+  ! L.40: mtlb(:) can be replaced by :() or : whether : is an M-file or not.
+  !! L.40: Unknown function mtlb not converted, original calling sequence used.
+  !! L.45: Unknown function serial not converted, original calling sequence used.
+  L.54: No simple equivalent, so mtlb_fwrite() is called.
+  L.56: No simple equivalent, so mtlb_fread() is called.
+  !! L.64: WARNING: Matlab reshape() suppresses singleton higher dimension, it is not the case for matrix.

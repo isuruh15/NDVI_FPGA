@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Index Version="1" Minor="0">
+	<Repository value="/home/nicola/Documents/vivado/axi4-stream-rs232">
+	</Repository>
+	<IP>
+		<VLNV value="xilinx.com:user:AXI4Stream_RS232:1.0">
+		</VLNV>
+		<DisplayName value="AXI4-Stream RS232">
+		</DisplayName>
+		<Description value="AXI4-Stream bridge to RS232. Internal buffer is 16kb for Input and for Output">
+		</Description>
+		<CoreRevision value="8">
+		</CoreRevision>
+		<ComponentPath value="component.xml">
+		</ComponentPath>
+		<Families>
+			<Family name="artix7">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+			<Family name="zynq">
+				<Part status="Production" name="ALL">
+				</Part>
+			</Family>
+		</Families>
+		<Taxonomies>
+			<Taxonomy value="AXI_Peripheral">
+			</Taxonomy>
+		</Taxonomies>
+		<Interfaces>
+			<Interface value="AXI4-Stream">
+			</Interface>
+		</Interfaces>
+	</IP>
+</Index>
+

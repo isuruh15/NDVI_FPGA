@@ -1,0 +1,23 @@
+% MATLAB CODE - LABORATORIO 2
+% NB!Impostare il corretto nome della porta com che si desidera usare
+% Caricamento del file dell'immagine a colori
+% Creazione del vettore di byte da inviare
+ matrice a 3 dimensioni dell'immagine a colori
+ numero di pixel in larghezza dell'immagine
+ numero di pixel in altezza dell'immagine
+ numero di pixel dell'immagine
+ numero di byte dell'immagine a colori
+ numero di byte dell'immagine in bianco nero
+ matrice a 3 dimensioni (una per colore) dell'immagine in bianco nero.
+ tutte e tre le componenti verranno riempite con gli stessi dati
+ elaborati dall'fpga
+ costruisco il vettore dei bytes r-g-b-r-g-b.. che compongono l'immagine a colori
+% Invio e ricezione dei dati
+ istanzio la porta seriale e configuro i parametri
+ apro il canale di comunicazione
+ invio i dati dell'immagine a colori
+ recupero i  dati dell'immagine in bianco nero
+ chiudo il canale di comunicazione ed elimono l'istanza della porta
+% Salvataggio del file dell'immagine in bianco nero risultante
+ salvo i dati ricevuti nella matrice creata precedentemente
+% Visualizzazione del risultato finale
